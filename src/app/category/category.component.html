@@ -1,0 +1,11 @@
+<div class="container">
+    <div>
+        <button type="button" class="btn btn-primary" (click)="addCategory()">Add Category</button>
+    </div>
+<br/>
+    <div class="row">
+        <div *ngFor="let category of categories" class="col-md-3 col-md-offset-4">
+            <app-item [category]="category"></app-item>
+        </div>
+    </div>
+</div>
