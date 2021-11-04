@@ -1,8 +1,14 @@
 <div class="container">
     <div>
         <button type="button" class="btn btn-primary" (click)="addCategory()">Add Category</button>
+        <button type="button" class="btn btn-primary" (click)="test()">Give Permission</button>
+    </div>
+
+    <div *ngIf="tryToLeave">
+        Hey You are leaving
     </div>
 <br/>
+    <div class="row">
     <div class="row">
         <div *ngFor="let category of categories" class="col-md-3 col-md-offset-4">
             <app-item [category]="category"></app-item>
