@@ -8,6 +8,7 @@ import { CategoryComponent } from './category/category.component';
 import { ItemComponent } from './item/item.component';
 import { ExpenseComponent } from './expense/expense.component';
 import { DashBoardComponent } from './dash-board/dash-board.component';
+import { ExpensesService } from './services/expenses-service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { DashBoardComponent } from './dash-board/dash-board.component';
     AppRoutingModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [ExpensesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
